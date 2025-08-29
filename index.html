@@ -19,8 +19,11 @@
         <a href="#about"><i class="fa fa-user"></i></a>
         <a href="#skills"><i class="fa fa-laptop"></i></a>
         <a href="#experience"><i class="fa fa-briefcase"></i></a>
-        <a href=""><i class="fa fa-envelope"></i></a>
         <a href="#contact"><i class="fa fa-phone"></i></a>
+    </div>
+
+    <div class="message" id="messageBox">
+        <p class="m-0" id="messageText"></p>
     </div>
 
     <div class="container-fluid hero-section" id="home">
@@ -73,10 +76,28 @@
                     </div>
                 </div>
                 <div class="mb-3 mt-5 muted-text">Curious to know more about me? Let's connect!</div>
-                <form class="d-flex mb-5 subscribe-form">
-                    <input type="email" class="form-control me-2" placeholder="Enter your email or Whatsapp No">
-                    <button type="submit" class="subscribe-btn">Subscribe</button>
-                </form>
+                <div class="d-flex mb-5 gap-3">
+                    <button type="button" class="copy-btn d-flex align-items-center" onclick="copyText('aj.aimaljan@gmail.com')">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" class="me-2 copy-icon"
+                            viewBox="0 0 16 16">
+                            <path
+                                d="M10 1.5A1.5 1.5 0 0 1 11.5 3v9A1.5 1.5 0 0 1 10 13.5H4A1.5 1.5 0 0 1 2.5 12V3A1.5 1.5 0 0 1 4 1.5h6zM4 0a3 3 0 0 0-3 3v9a3 3 0 0 0 3 3h6a3 3 0 0 0 3-3V3a3 3 0 0 0-3-3H4z" />
+                            <path
+                                d="M13 4.5V14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V4.5h1V14a1 1 0 0 0 1 1h6a1 1 0 0 0 1-1V4.5h1z" />
+                        </svg>
+                        <span>Copy Email</span>
+                    </button>
+                    <button type="button" class="copy-btn d-flex align-items-center" onclick="copyText('+923113246679')">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" class="me-2 copy-icon"
+                            viewBox="0 0 16 16">
+                            <path
+                                d="M10 1.5A1.5 1.5 0 0 1 11.5 3v9A1.5 1.5 0 0 1 10 13.5H4A1.5 1.5 0 0 1 2.5 12V3A1.5 1.5 0 0 1 4 1.5h6zM4 0a3 3 0 0 0-3 3v9a3 3 0 0 0 3 3h6a3 3 0 0 0 3-3V3a3 3 0 0 0-3-3H4z" />
+                            <path
+                                d="M13 4.5V14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V4.5h1V14a1 1 0 0 0 1 1h6a1 1 0 0 0 1-1V4.5h1z" />
+                        </svg>
+                        <span>Copy Number</span>
+                    </button>
+                </div>
                 <div class="social-icons mb-3">
                     <a href="https://www.linkedin.com/in/aimaljan" target="_blank"><i class="fab fa-linkedin"></i></a>
                     <a href="https://github.com/Aimal09" target="_blank"><i class="fab fa-github"></i></a>
@@ -116,46 +137,166 @@
         <h2 class="text-center mb-5 fw-bold">Skills & Technologies</h2>
         <div class="row g-3 justify-content-center">
             <!-- Frontend -->
-            <div class="col-6 col-sm-4 col-md-3 col-lg-2"><div class="skill-tech-card"><i class="fab fa-react skill-icon" style="color:#61dafb;"></i><span>React</span></div></div>
-            <div class="col-6 col-sm-4 col-md-3 col-lg-2"><div class="skill-tech-card"><i class="fab fa-react skill-icon" style="color:#61dafb;"></i><span>React Native</span></div></div>
-            <div class="col-6 col-sm-4 col-md-3 col-lg-2"><div class="skill-tech-card"><i class="fab fa-js-square skill-icon" style="color:#f7df1e;"></i><span>JavaScript</span></div></div>
-            <div class="col-6 col-sm-4 col-md-3 col-lg-2"><div class="skill-tech-card"><img src="https://www.svgrepo.com/show/349540/typescript.svg" alt="TypeScript" class="skill-icon" style="width:32px;height:32px;"><span>TypeScript</span></div></div>
-            <div class="col-6 col-sm-4 col-md-3 col-lg-2"><div class="skill-tech-card"><i class="fab fa-html5 skill-icon" style="color:#e34c26;"></i><span>HTML5</span></div></div>
-            <div class="col-6 col-sm-4 col-md-3 col-lg-2"><div class="skill-tech-card"><i class="fab fa-css3-alt skill-icon" style="color:#1572b6;"></i><span>CSS3</span></div></div>
-            <div class="col-6 col-sm-4 col-md-3 col-lg-2"><div class="skill-tech-card"><i class="fab fa-sass skill-icon" style="color:#cc6699;"></i><span>SASS</span></div></div>
-            <div class="col-6 col-sm-4 col-md-3 col-lg-2"><div class="skill-tech-card"><i class="fab fa-bootstrap skill-icon" style="color:#7952b3;"></i><span>Bootstrap</span></div></div>
-            <div class="col-6 col-sm-4 col-md-3 col-lg-2"><div class="skill-tech-card"><img src="https://www.svgrepo.com/show/374118/tailwind.svg" alt="Tailwind" class="skill-icon" style="width:32px;height:32px;"><span>Tailwind</span></div></div>
-            <div class="col-6 col-sm-4 col-md-3 col-lg-2"><div class="skill-tech-card"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nextjs/nextjs-original.svg" alt="Next.js" class="skill-icon" style="width:32px;height:32px;background:#fff;border-radius:6px;"><span>Next.js</span></div></div>
-            <div class="col-6 col-sm-4 col-md-3 col-lg-2"><div class="skill-tech-card"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/flutter/flutter-original.svg" alt="Flutter" class="skill-icon" style="width:32px;height:32px;"><span>Flutter</span></div></div>
+            <div class="col-6 col-sm-4 col-md-3 col-lg-2">
+                <div class="skill-tech-card"><i class="fab fa-react skill-icon"
+                        style="color:#61dafb;"></i><span>React</span></div>
+            </div>
+            <div class="col-6 col-sm-4 col-md-3 col-lg-2">
+                <div class="skill-tech-card"><i class="fab fa-react skill-icon" style="color:#61dafb;"></i><span>React
+                        Native</span></div>
+            </div>
+            <div class="col-6 col-sm-4 col-md-3 col-lg-2">
+                <div class="skill-tech-card"><i class="fab fa-js-square skill-icon"
+                        style="color:#f7df1e;"></i><span>JavaScript</span></div>
+            </div>
+            <div class="col-6 col-sm-4 col-md-3 col-lg-2">
+                <div class="skill-tech-card"><img src="https://www.svgrepo.com/show/349540/typescript.svg"
+                        alt="TypeScript" class="skill-icon" style="width:32px;height:32px;"><span>TypeScript</span>
+                </div>
+            </div>
+            <div class="col-6 col-sm-4 col-md-3 col-lg-2">
+                <div class="skill-tech-card"><i class="fab fa-html5 skill-icon"
+                        style="color:#e34c26;"></i><span>HTML5</span></div>
+            </div>
+            <div class="col-6 col-sm-4 col-md-3 col-lg-2">
+                <div class="skill-tech-card"><i class="fab fa-css3-alt skill-icon"
+                        style="color:#1572b6;"></i><span>CSS3</span></div>
+            </div>
+            <div class="col-6 col-sm-4 col-md-3 col-lg-2">
+                <div class="skill-tech-card"><i class="fab fa-sass skill-icon"
+                        style="color:#cc6699;"></i><span>SASS</span></div>
+            </div>
+            <div class="col-6 col-sm-4 col-md-3 col-lg-2">
+                <div class="skill-tech-card"><i class="fab fa-bootstrap skill-icon"
+                        style="color:#7952b3;"></i><span>Bootstrap</span></div>
+            </div>
+            <div class="col-6 col-sm-4 col-md-3 col-lg-2">
+                <div class="skill-tech-card"><img src="https://www.svgrepo.com/show/374118/tailwind.svg" alt="Tailwind"
+                        class="skill-icon" style="width:32px;height:32px;"><span>Tailwind</span></div>
+            </div>
+            <div class="col-6 col-sm-4 col-md-3 col-lg-2">
+                <div class="skill-tech-card"><img
+                        src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nextjs/nextjs-original.svg"
+                        alt="Next.js" class="skill-icon"
+                        style="width:32px;height:32px;background:#fff;border-radius:6px;"><span>Next.js</span></div>
+            </div>
+            <div class="col-6 col-sm-4 col-md-3 col-lg-2">
+                <div class="skill-tech-card"><img
+                        src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/flutter/flutter-original.svg"
+                        alt="Flutter" class="skill-icon" style="width:32px;height:32px;"><span>Flutter</span></div>
+            </div>
             <!-- Backend -->
-            <div class="col-6 col-sm-4 col-md-3 col-lg-2"><div class="skill-tech-card"><i class="fab fa-node-js skill-icon" style="color:#3c873a;"></i><span>Node.js</span></div></div>
-            <div class="col-6 col-sm-4 col-md-3 col-lg-2"><div class="skill-tech-card"><i class="fab fa-php skill-icon" style="color:#777bb4;"></i><span>PHP</span></div></div>
-            <div class="col-6 col-sm-4 col-md-3 col-lg-2"><div class="skill-tech-card"><img src="https://www.svgrepo.com/show/353985/laravel.svg" alt="Laravel" class="skill-icon" style="width:32px;height:32px;"><span>Laravel</span></div></div>
-            <div class="col-6 col-sm-4 col-md-3 col-lg-2"><div class="skill-tech-card"><i class="fab fa-java skill-icon" style="color:#007396;"></i><span>Java</span></div></div>
-            <div class="col-6 col-sm-4 col-md-3 col-lg-2"><div class="skill-tech-card"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/csharp/csharp-original.svg" alt="C#" class="skill-icon" style="width:32px;height:32px;"><span>C#</span></div></div>
-            <div class="col-6 col-sm-4 col-md-3 col-lg-2"><div class="skill-tech-card"><i class="fab fa-python skill-icon" style="color:#3776ab;"></i><span>Python</span></div></div>
-            <div class="col-6 col-sm-4 col-md-3 col-lg-2"><div class="skill-tech-card"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/express/express-original.svg" alt="Express.js" class="skill-icon" style="width:32px;height:32px;background:#fff;border-radius:6px;"><span>Express.js</span></div></div>
-            <div class="col-6 col-sm-4 col-md-3 col-lg-2"><div class="skill-tech-card"><img src="https://www.svgrepo.com/show/354107/nestjs.svg" alt="NestJS" class="skill-icon" style="width:32px;height:32px;"><span>NestJS</span></div></div>
+            <div class="col-6 col-sm-4 col-md-3 col-lg-2">
+                <div class="skill-tech-card"><i class="fab fa-node-js skill-icon"
+                        style="color:#3c873a;"></i><span>Node.js</span></div>
+            </div>
+            <div class="col-6 col-sm-4 col-md-3 col-lg-2">
+                <div class="skill-tech-card"><i class="fab fa-php skill-icon"
+                        style="color:#777bb4;"></i><span>PHP</span></div>
+            </div>
+            <div class="col-6 col-sm-4 col-md-3 col-lg-2">
+                <div class="skill-tech-card"><img src="https://www.svgrepo.com/show/353985/laravel.svg" alt="Laravel"
+                        class="skill-icon" style="width:32px;height:32px;"><span>Laravel</span></div>
+            </div>
+            <div class="col-6 col-sm-4 col-md-3 col-lg-2">
+                <div class="skill-tech-card"><i class="fab fa-java skill-icon"
+                        style="color:#007396;"></i><span>Java</span></div>
+            </div>
+            <div class="col-6 col-sm-4 col-md-3 col-lg-2">
+                <div class="skill-tech-card"><img
+                        src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/csharp/csharp-original.svg" alt="C#"
+                        class="skill-icon" style="width:32px;height:32px;"><span>C#</span></div>
+            </div>
+            <div class="col-6 col-sm-4 col-md-3 col-lg-2">
+                <div class="skill-tech-card"><i class="fab fa-python skill-icon"
+                        style="color:#3776ab;"></i><span>Python</span></div>
+            </div>
+            <div class="col-6 col-sm-4 col-md-3 col-lg-2">
+                <div class="skill-tech-card"><img
+                        src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/express/express-original.svg"
+                        alt="Express.js" class="skill-icon"
+                        style="width:32px;height:32px;background:#fff;border-radius:6px;"><span>Express.js</span></div>
+            </div>
+            <div class="col-6 col-sm-4 col-md-3 col-lg-2">
+                <div class="skill-tech-card"><img src="https://www.svgrepo.com/show/354107/nestjs.svg" alt="NestJS"
+                        class="skill-icon" style="width:32px;height:32px;"><span>NestJS</span></div>
+            </div>
             <!-- Databases -->
-            <div class="col-6 col-sm-4 col-md-3 col-lg-2"><div class="skill-tech-card"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original.svg" alt="MongoDB" class="skill-icon" style="width:32px;height:32px;"><span>MongoDB</span></div></div>
-            <div class="col-6 col-sm-4 col-md-3 col-lg-2"><div class="skill-tech-card"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg" alt="MySQL" class="skill-icon" style="width:32px;height:32px;"><span>MySQL</span></div></div>
-            <div class="col-6 col-sm-4 col-md-3 col-lg-2"><div class="skill-tech-card"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/microsoftsqlserver/microsoftsqlserver-plain.svg" alt="MSSQL" class="skill-icon" style="width:32px;height:32px;"><span>MSSQL</span></div></div>
-            <div class="col-6 col-sm-4 col-md-3 col-lg-2"><div class="skill-tech-card"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/firebase/firebase-plain.svg" alt="Firebase" class="skill-icon" style="width:32px;height:32px;"><span>Firebase</span></div></div>
-            <div class="col-6 col-sm-4 col-md-3 col-lg-2"><div class="skill-tech-card"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/supabase/supabase-original.svg" alt="Supabase" class="skill-icon" style="width:32px;height:32px;"><span>Supabase</span></div></div>
+            <div class="col-6 col-sm-4 col-md-3 col-lg-2">
+                <div class="skill-tech-card"><img
+                        src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original.svg"
+                        alt="MongoDB" class="skill-icon" style="width:32px;height:32px;"><span>MongoDB</span></div>
+            </div>
+            <div class="col-6 col-sm-4 col-md-3 col-lg-2">
+                <div class="skill-tech-card"><img
+                        src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg" alt="MySQL"
+                        class="skill-icon" style="width:32px;height:32px;"><span>MySQL</span></div>
+            </div>
+            <div class="col-6 col-sm-4 col-md-3 col-lg-2">
+                <div class="skill-tech-card"><img
+                        src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/microsoftsqlserver/microsoftsqlserver-plain.svg"
+                        alt="MSSQL" class="skill-icon" style="width:32px;height:32px;"><span>MSSQL</span></div>
+            </div>
+            <div class="col-6 col-sm-4 col-md-3 col-lg-2">
+                <div class="skill-tech-card"><img
+                        src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/firebase/firebase-plain.svg"
+                        alt="Firebase" class="skill-icon" style="width:32px;height:32px;"><span>Firebase</span></div>
+            </div>
+            <div class="col-6 col-sm-4 col-md-3 col-lg-2">
+                <div class="skill-tech-card"><img
+                        src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/supabase/supabase-original.svg"
+                        alt="Supabase" class="skill-icon" style="width:32px;height:32px;"><span>Supabase</span></div>
+            </div>
             <!-- DevOps & Management -->
-            <div class="col-6 col-sm-4 col-md-3 col-lg-2"><div class="skill-tech-card"><i class="fab fa-aws skill-icon" style="color:#ff9900;"></i><span>AWS</span></div></div>
-            <div class="col-6 col-sm-4 col-md-3 col-lg-2"><div class="skill-tech-card"><i class="fab fa-docker skill-icon" style="color:#2496ed;"></i><span>Docker</span></div></div>
-            <div class="col-6 col-sm-4 col-md-3 col-lg-2"><div class="skill-tech-card"><i class="fab fa-git-alt skill-icon" style="color:#f34f29;"></i><span>Git</span></div></div>
-            <div class="col-6 col-sm-4 col-md-3 col-lg-2"><div class="skill-tech-card"><i class="fab fa-github skill-icon" style="color:#333;"></i><span>GitHub</span></div></div>
-            <div class="col-6 col-sm-4 col-md-3 col-lg-2"><div class="skill-tech-card"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/jira/jira-original.svg" alt="Jira" class="skill-icon" style="width:32px;height:32px;"><span>Jira</span></div></div>
-            <div class="col-6 col-sm-4 col-md-3 col-lg-2"><div class="skill-tech-card"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/trello/trello-plain.svg" alt="Trello" class="skill-icon" style="width:32px;height:32px;"><span>Trello</span></div></div>
+            <div class="col-6 col-sm-4 col-md-3 col-lg-2">
+                <div class="skill-tech-card"><i class="fab fa-aws skill-icon"
+                        style="color:#ff9900;"></i><span>AWS</span></div>
+            </div>
+            <div class="col-6 col-sm-4 col-md-3 col-lg-2">
+                <div class="skill-tech-card"><i class="fab fa-docker skill-icon"
+                        style="color:#2496ed;"></i><span>Docker</span></div>
+            </div>
+            <div class="col-6 col-sm-4 col-md-3 col-lg-2">
+                <div class="skill-tech-card"><i class="fab fa-git-alt skill-icon"
+                        style="color:#f34f29;"></i><span>Git</span></div>
+            </div>
+            <div class="col-6 col-sm-4 col-md-3 col-lg-2">
+                <div class="skill-tech-card"><i class="fab fa-github skill-icon"
+                        style="color:#333;"></i><span>GitHub</span></div>
+            </div>
+            <div class="col-6 col-sm-4 col-md-3 col-lg-2">
+                <div class="skill-tech-card"><img
+                        src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/jira/jira-original.svg" alt="Jira"
+                        class="skill-icon" style="width:32px;height:32px;"><span>Jira</span></div>
+            </div>
+            <div class="col-6 col-sm-4 col-md-3 col-lg-2">
+                <div class="skill-tech-card"><img
+                        src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/trello/trello-plain.svg" alt="Trello"
+                        class="skill-icon" style="width:32px;height:32px;"><span>Trello</span></div>
+            </div>
             <!-- Design -->
-            <div class="col-6 col-sm-4 col-md-3 col-lg-2"><div class="skill-tech-card"><i class="fab fa-figma skill-icon" style="color:#a259ff;"></i><span>Figma</span></div></div>
-            <div class="col-6 col-sm-4 col-md-3 col-lg-2"><div class="skill-tech-card"><img src="https://www.svgrepo.com/show/303177/photoshop-cc-logo.svg" alt="Photoshop" class="skill-icon" style="width:32px;height:32px;"><span>Photoshop</span></div></div>
-            <div class="col-6 col-sm-4 col-md-3 col-lg-2"><div class="skill-tech-card"><img src="https://www.svgrepo.com/show/452151/adobe-xd.svg" alt="Adobe XD" class="skill-icon" style="width:32px;height:32px;"><span>Adobe XD</span></div></div>
+            <div class="col-6 col-sm-4 col-md-3 col-lg-2">
+                <div class="skill-tech-card"><i class="fab fa-figma skill-icon"
+                        style="color:#a259ff;"></i><span>Figma</span></div>
+            </div>
+            <div class="col-6 col-sm-4 col-md-3 col-lg-2">
+                <div class="skill-tech-card"><img src="https://www.svgrepo.com/show/303177/photoshop-cc-logo.svg"
+                        alt="Photoshop" class="skill-icon" style="width:32px;height:32px;"><span>Photoshop</span></div>
+            </div>
+            <div class="col-6 col-sm-4 col-md-3 col-lg-2">
+                <div class="skill-tech-card"><img src="https://www.svgrepo.com/show/452151/adobe-xd.svg" alt="Adobe XD"
+                        class="skill-icon" style="width:32px;height:32px;"><span>Adobe XD</span></div>
+            </div>
             <!-- Other -->
-            <div class="col-6 col-sm-4 col-md-3 col-lg-2"><div class="skill-tech-card"><i class="fab fa-npm skill-icon" style="color:#cb3837;"></i><span>NPM</span></div></div>
-            <div class="col-6 col-sm-4 col-md-3 col-lg-2"><div class="skill-tech-card"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linux/linux-original.svg" alt="Linux" class="skill-icon" style="width:32px;height:32px;"><span>Linux</span></div></div>
+            <div class="col-6 col-sm-4 col-md-3 col-lg-2">
+                <div class="skill-tech-card"><i class="fab fa-npm skill-icon"
+                        style="color:#cb3837;"></i><span>NPM</span></div>
+            </div>
+            <div class="col-6 col-sm-4 col-md-3 col-lg-2">
+                <div class="skill-tech-card"><img
+                        src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linux/linux-original.svg" alt="Linux"
+                        class="skill-icon" style="width:32px;height:32px;"><span>Linux</span></div>
+            </div>
         </div>
     </section>
 
@@ -170,14 +311,21 @@
                     </div>
                     <div class="experience-card-content">
                         <h5 class="company-name">VAYVO</h5>
-                        <p>Founded VAYVO in 2025, a plateform that is designed for school kids transport. VAYVO is a platform that helps school kids to get transport to their school. They can Track, Monitor, Live stream their kids journey. Also VAYVO team make sure the security and safty of childrens with Highly trained drivers, Certified Vehicles and a dedicated team to monitor whole ride of your love ones</p>
+                        <p>Founded VAYVO in 2025, a plateform that is designed for school kids transport. VAYVO is a
+                            platform that helps school kids to get transport to their school. They can Track, Monitor,
+                            Live stream their kids journey. Also VAYVO team make sure the security and safty of
+                            childrens with Highly trained drivers, Certified Vehicles and a dedicated team to monitor
+                            whole ride of your love ones</p>
                         <ul>
-                            <li>Technologies used: NodeJS, Supabase, Azure, Azure Storage, Functions, ReactJS, NextJS, OpenAI, TailwindCSS, React-Native, TypeScript, GitHub, Google APIs</li>
+                            <li>Technologies used: NodeJS, Supabase, Azure, Azure Storage, Functions, ReactJS, NextJS,
+                                OpenAI, TailwindCSS, React-Native, TypeScript, GitHub, Google APIs</li>
                             <li>Worked on VAYVO platform as a Software Engineer, my responsibilities include:</li>
                             <li>Developed the backend of the platform using NodeJS, Express, and Supabase</li>
                             <li>Implemented user authentication and authorization using JWT</li>
-                            <li>Designed and developed the frontend of the platform using ReactJS, NextJS, and TailwindCSS</li>
-                            <li>Worked closely with the design team to create a user-friendly and visually appealing interface</li>
+                            <li>Designed and developed the frontend of the platform using ReactJS, NextJS, and
+                                TailwindCSS</li>
+                            <li>Worked closely with the design team to create a user-friendly and visually appealing
+                                interface</li>
                         </ul>
                     </div>
                 </div>
@@ -197,11 +345,15 @@
                     </div>
                     <div class="experience-card-content">
                         <h5 class="company-name">Imtim</h5>
-                        <p>Worked on AI tool that help users to connect all their social media and website to manage their content and engagement with best SEO.</p>
+                        <p>Worked on AI tool that help users to connect all their social media and website to manage
+                            their content and engagement with best SEO.</p>
                         <ul>
-                            <li>Technologies used: NextJS, Vercel, Supabase, OpenAI, TailwindCSS, Flutter, Dart, GitHub</li>
-                            <li>Develop the webapp with integration with social media APIs i.e Facebook, Instagram, Linkedin, TikTok and WebFlow</li>
-                            <li>Worked on AI tool that help users to connect all their social media and website to manage their content and engagement with best SEO.</li>
+                            <li>Technologies used: NextJS, Vercel, Supabase, OpenAI, TailwindCSS, Flutter, Dart, GitHub
+                            </li>
+                            <li>Develop the webapp with integration with social media APIs i.e Facebook, Instagram,
+                                Linkedin, TikTok and WebFlow</li>
+                            <li>Worked on AI tool that help users to connect all their social media and website to
+                                manage their content and engagement with best SEO.</li>
                             <li>Used OpenAI to make good SEO recommendations for users</li>
                         </ul>
                     </div>
@@ -217,9 +369,11 @@
                     </div>
                     <div class="experience-card-content">
                         <h5 class="company-name">Basecamp</h5>
-                        <p>I've been in DevOps department as well as in development side with .Net for 3 years, my responsibilities include:</p>
+                        <p>I've been in DevOps department as well as in development side with .Net for 3 years, my
+                            responsibilities include:</p>
                         <ul>
-                            <li>Technologies used: .Net, C#, NodeJS, SQL, AWS, S3, LAMBDA, Docker, ReactJS, NextJS, Vercel, Supabase, OpenAI, TailwindCSS, Flutter, Dart, GitHub, Jira, ZOHO</li>
+                            <li>Technologies used: .Net, C#, NodeJS, SQL, AWS, S3, LAMBDA, Docker, ReactJS, NextJS,
+                                Vercel, Supabase, OpenAI, TailwindCSS, Flutter, Dart, GitHub, Jira, ZOHO</li>
                             <li>Manage and maintain the company's infrastructure, including servers, networks, and
                                 databases</li>
                             <li>Collaborate with cross-functional teams to ensure smooth and efficient operations</li>
@@ -251,7 +405,8 @@
                             <li>Developing user interfaces using HTML, CSS, and JavaScript</li>
                             <li>Collaborating with backend developers to integrate front-end components with server-side
                                 functionality</li>
-                            <li>Optimizing website performance for faster loading times and improved user experience</li>
+                            <li>Optimizing website performance for faster loading times and improved user experience
+                            </li>
                             <li>Ensuring cross-browser compatibility and responsiveness of websites across different
                                 devices and screen sizes</li>
                         </ul>
@@ -277,6 +432,28 @@
 
     <!-- Bootstrap JS -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        function copyText(text) {
+            navigator.clipboard.writeText(text).then(() => {
+                showMessage("Copied: " + text);
+            }).catch(err => {
+                console.error("Failed to copy: ", err);
+            });
+        }
+
+
+        function showMessage(msg) {
+        const box = document.getElementById("messageBox");
+        const text = document.getElementById("messageText");
+
+        text.textContent = msg;           // set new message
+        box.classList.add("show");        // show
+
+        setTimeout(() => {
+            box.classList.remove("show");   // hide after 3s
+        }, 3000);
+        }
+    </script>
 </body>
 
 </html>
