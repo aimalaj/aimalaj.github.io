@@ -4,6 +4,11 @@
     box-sizing: border-box;
 }
 
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
 .hero-section {
     min-height: 100vh;
     display: flex;
@@ -256,6 +261,12 @@ input {
     }
 }
 
+@media (max-width: 992px) {
+    .profile-img {
+        height: calc(70vh - 50px);
+    }
+}
+
 /* Skills Section */
 .skills-section {
     background: #fff;
@@ -330,16 +341,6 @@ input {
     text-align: center;
 }
 
-@media (max-width: 991px) {
-    .skills-section {
-        padding: 32px 4px 18px 4px;
-    }
-
-    .skill-tech-card {
-        min-height: 90px;
-        padding: 0.8rem 0.2rem 0.5rem 0.2rem;
-    }
-}
 
 @media (max-width: 600px) {
     .skills-section {
@@ -390,7 +391,8 @@ input {
     width: calc(50% - 25px);
 }
 
-#experience .experience-card-content {
+#experience .experience-card-content,
+.card-light {
     background-color: #f9f9f9;
     border-radius: 16px;
     padding: 16px;
@@ -437,6 +439,10 @@ input {
 #experience .experience-card-header-title>* {
     position: relative;
     z-index: 2;
+}
+
+#experience ul {
+    list-style-position: inside;
 }
 
 .company-name {
@@ -507,4 +513,78 @@ input {
     bottom: 20px;
     opacity: .8;
     visibility: visible;
+}
+
+.project-logo {
+    height: 20px;
+}
+
+.project-tech span {
+    font-size: 12px;
+    padding: 4px 8px;
+    border-radius: 8px;
+    background-color: #eee;
+    color: #333;
+    font-weight: 500;
+}
+
+#projects p {
+    color: #777;
+}
+
+#projects .col-md-6>a {
+    position: relative;
+}
+
+.link-icon {
+    font-size: 12px;
+    color: #999;
+    position: absolute;
+    opacity: 0;
+    right: 0px;
+    top: 0px;
+    transition: all .3s ease-out;
+}
+
+
+#projects .col-md-6>a:hover .link-icon {
+    opacity: 1;
+    right: 15px;
+    top: 15px;
+}
+
+@media (max-width: 991px) {
+    .skills-section {
+        padding: 32px 4px 18px 4px;
+    }
+
+    .skill-tech-card {
+        min-height: 90px;
+        padding: 0.8rem 0.2rem 0.5rem 0.2rem;
+    }
+
+
+    .empty,
+    .track {
+        display: none;
+    }
+
+    .text-end {
+        text-align: left;
+    }
+
+    #experience .right,
+    #experience .left {
+        width: 100%;
+    }
+
+    .card-light {
+        background: inherit;
+    }
+
+    .card-light-m {
+        background-color: #f9f9f9;
+        border-radius: 16px;
+        padding: 16px;
+    }
 }
